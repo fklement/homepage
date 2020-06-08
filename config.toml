@@ -1,0 +1,116 @@
+baseURL = "https://felix-klement.de"
+title   = "Felix Klement"
+languageCode = "en-us"
+
+DefaultContentLanguage = "en"
+theme = "hello-friend-ng"
+
+pygmentsCodefences = false
+pygmentsUseClasses = false
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+googleAnalytics = "UA-89651267-1"
+# disqusShortname = ""
+
+buildDrafts  = false
+buildFuture  = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Felix Klement"
+
+[markup]
+  [markup.blackFriday]
+    hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Homepage and Blog by Felix klement"
+  keywords = "homepage, blog, science, informatics, development, programming, freelancer, selbstständig, projects, cloud, software"
+  images = [""]
+
+  homeSubtitle = "Research Assistent for IT-Security"
+  homeSubtitle2 = "Developer // CS Student // Elixir & Erlang lover // IoT Geek"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  gitUrl = "https://github.com/fklement/homepage/commit/"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/felixklement/"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:mail(at)felix-klement(dot)de"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/fklement/"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/felix-klement/"
+
+  [[params.social]]
+    name = "keybase"
+    url  = "https://keybase.io/fklement"
+
+[languages]
+  [languages.en]
+    subtitle  = "Homepage & Blog"
+    weight    = 1
+    copyright = ''
+
+  [languages.de]
+    subtitle  = "Homepage & Blog"
+    weight    = 2
+    copyright = ''
+
+
+[[menu.main]]
+  identifier = "about"
+  name       = "About"
+  url        = "about/"
+[[menu.main]]
+  identifier = "posts"
+  name       = "Articles"
+  url        = "posts/"
+[[menu.main]]
+  identifier = "academic"
+  name       = "Academic"
+  url        = "academic/"
+[[menu.main]]
+  identifier = "slides"
+  name       = "Slides"
+  url        = "slides/"

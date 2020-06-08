@@ -1,0 +1,12 @@
+.pdf-view {
+    width: 100%;
+    height: 700px;
+
+    @media #{$media-size-tablet} {
+        height: 500px;
+    }
+
+    @media #{$media-size-phone} {
+        height: 400px;
+    }
+}

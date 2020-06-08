@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main aria-role="main">
+    <div>
+        <h1>{{ .Site.Title }}</h1>
+
+        {{- with .Site.Params.homeSubtitle }}
+        <p>{{.}}</p>
+        {{- end }}
+        <hr>
+        {{- with .Site.Params.homeSubtitle2 }}
+        <p class="subtext">{{.}}</p>
+        {{- end }}
+
+        {{- with .Site.Params.social }}
+        <div>
+            {{ partial "social-icons.html" . }}
+        </div>
+        {{- end }}
+    </div>
+</main>
+{{ end }}
