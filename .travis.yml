@@ -12,8 +12,8 @@ script:
   - hugo version
   - hugo --minify
 before_deploy:
-  - openssl aes-256-cbc -K $encrypted_<...>_key -iv $encrypted_<...>_iv -in deploy_rsa.enc
-    -out /tmp/deploy_rsa -d
+  - openssl aes-256-cbc -K $encrypted_db2095f63ba3_key -iv $encrypted_db2095f63ba3_iv
+    -in deploy_rsa.enc -out deploy_rsa -d
   - eval "$(ssh-agent -s)"
   - chmod 600 /tmp/deploy_rsa
   - ssh-add /tmp/deploy_rsa
@@ -31,6 +31,3 @@ env:
     - secure: XiacfJVGwUcz7saRcHCG6vXnHzBvyqZMoRiXCjF711uiCXnIwk9DtciA2QwlcQ7ub5FXTkzqjXRW7T4sHr3DvQ3WxDIrA3wJUFmt/IRhRYr9I9BzYA3uXRUDp9Oyl4F7mBBxQgFODQyyTDUyUggr/4+Ppip5crE/A0vKqn7OXUHre0iSuH0fKFP0eULF5uRUmIzCgmPIcYGVb+/6xKkIULE/RuP3dR3NyQaQR+jfEoQhxXk1Mr/EtsrJ2ZEBAXk3wH73cbQhuTz83eD2ITvEWOUxc8HtPz+I1RcDLyVN6Q8VowrJWmOoXHO/HVFRJNDr+ra6f98vW/nXSomNVlQGG2PAOKKgSi2s3/TaGy4Mz/fSiPEQbMQwfndUlei1dpMdSU7AkXocJIzQ5t7+jQqhqaqf5IjPsQTCr9N13pf6ccfrm6x1CZ+BVj5s5gHbYCb5HUJW7hIkxb6nis2p69zRROgGbCYf6LqVLzItlKmo9Dvbi0C188kQ1ho9nnMQmG/SeZvvw3sy9ixKvEHaz8Y/g3OCd9+91/hCyjyaxmg+2IQtrhhcW2Sfc6v4rXMoUD/9t5ry/VejFjMvizsAVCiEiKStdYGbudem/hpSzF+Z6ixYHVcpAdHR5/A7SwcM5flTODKnyQmKKUBCwxBdjXXO8cqeQpoY1PvB891rUK5Q1OM=
     - secure: EHKWDWaUAt8QO3t0RDm8ZaegHWwfQYKhsn5Jg6rTwac4gykvAl8jYg7DxbIZB2Ote7M6v+AhN79iNxlsuQInAZ4bUSVMo50JcwA+kto2TUqy6416ovd1YRK8g6fRgUrIYEj+E5xKuRi0hNqvqShwQNhHnF2Aq/G8KTjb4+UEB4nHdlcxl3z3JeAMfXBQ/KLm5eFZbuE5n4/b+A2UOnZJXoqUXsAKSlgeAzOWGmAaqTyisJde1qY6zm0on4gzzV3ltucII9s236WctC/c64eSeCGuyr13RqhKTSmdzJs66VxAq/M8BQexgrMJaWPHIRn/efViWHcLMroYgHlTZ4N1gWuc0nuddKt8s0GOaBwk0eEM670YEBRODX0YqsZmq22LqvJm23f2od/KNY2lNxM0tijZl43DGjrrWEgKf6hYYIsJN1USVhUYUrRKMp8zp/JHWOnvZnbRj/zVXKLje0FYG94Exb9OCtNn/9TELBicZvRwlScC+WPvo/3c8UUKwbNvE4IZx+jOkRurFKI0TSMRQf3p86ZBvgCfOQree/bDVBqz0m83LzvhCs+dQirZu2U5/nBjMjULIzGGISeTiAPm/+44OjhjhZl2QiRV02oveiH2u9wQXe/PuduomTmdNm1AjrudQIFwI3uEYqsTBY9XgBRhrHWBnXi/eW+VAk6ZaGw=
     - secure: AFq9pyWrnCIEuHOy+bhbrpftKEIFKWeqC6RrpigY+ACVoKUwl5pfs2mAz9k6eymrNtuOzxgAjIHYMTQD+m1WTfywLgu3UbbyESvT/CXu6T8YoYexxrbwpbvsG5L8l3Icujix/Z73Y8v6iXRVRkdyis5JsnV1oda+JYSaGRKJay4c02+kvkyrW0PJdQksh/qZGbiyop7/9uRFy+sHfXTyWkLoNUY70Dqlw2Oj5g82zkOL/f3rPTprHx34rB259t1I000LjtfH23roLxPM9BZFBT5SYefWW1IiCBolxDH/RyD36ooRbSdjNtsiVN1deNkLMdRU5Ct5JPIIpiLHO838nXQvfJejgCnJ+0iEt5LKWCE40ENrdnSG65GUrL65JgCkgl9utBVLDO1G/XvhZGPmwBECwTrEGID78S5dhna6DWIOvcj7mlnWx+gLOhy10BHbofvLE3pxPyy2+3il2OYZ1hBsGzXDFdWJem0atB8+Da2ZmeQpm1iOvReTAYWDTA2yHwwdPgHD+TM/koVHNivBjoqou0wWnPKBMHhEtYuXTZLg8IGAApirhGX4ZBp/dNHRel/M0V+UFndvVRg6CjfYbgQqaSDi2y0mpeW5ZB6Lb8FhKbzdmIVLCmysn0UD58GjCN9wrHJxenIg7nocNYU0GZBIzVemxAwI8Hvn+WdPuK4=
-before_install:
-  - openssl aes-256-cbc -K $encrypted_db2095f63ba3_key -iv $encrypted_db2095f63ba3_iv
-    -in deploy_rsa.enc -out deploy_rsa -d
