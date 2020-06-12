@@ -2,6 +2,7 @@
 description: "Smart Home: Freezer temperature sensor! ❄️"
 date: 2019-08-03T10:55:04+02:00
 draft: false
+images: ["https://cdn-images-1.medium.com/max/12000/0*bfY-RyrbceXVo9OU."]
 tags:
   - Smart-Home
   - IoT

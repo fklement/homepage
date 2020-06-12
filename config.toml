@@ -28,7 +28,7 @@ disable404     = false
 disableHugoGeneratorInject = false
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  posts = "/posts/:year/:month/:filename/"
 
 [author]
   name = "Felix Klement"
@@ -40,6 +40,10 @@ disableHugoGeneratorInject = false
 [taxonomies]
   tag      = "tags"
   category = "categories"
+
+[Social]
+  linkedin = "felix-klement"
+  twitter = "fklement"
 
 [params]
   dateform        = "Jan 2, 2006"

@@ -3,6 +3,7 @@ description: "Algorithmic Design Considerations for Geospatial & Temporal Big Da
 date: 2020-06-06T16:56:27+02:00
 draft: false
 katex: true
+images: ["https://images.unsplash.com/photo-1451186242394-2b461812025b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3152&q=80"]
 markup: "pandoc"
 author: "test"
 tags:
