@@ -5,7 +5,7 @@ draft: false
 katex: true
 images: ["https://images.unsplash.com/photo-1451186242394-2b461812025b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3152&q=80"]
 markup: "pandoc"
-author: "test"
+author: "Felix Klement"
 tags:
   - Algorithms
   - Big-Data
